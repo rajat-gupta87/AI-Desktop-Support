@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>
+        AI Desktop Support
+    </title>
+
+    <link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+<body>
+
+    <div class="main-container">
+
+
+        <div class="sidebar">
+
+            <h2>
+                History
+            </h2>
+
+            <div id="history-list"></div>
+
+
+            <h2>
+                Tickets
+            </h2>
+
+            <div id="ticket-list"></div>
+
+        </div>
+
+
+
+        <div class="chat-section">
+
+
+            <div class="top-bar">
+
+                <h1>
+                    AI Desktop Support
+                </h1>
+
+                <div class="top-buttons">
+
+                    <button onclick="openTicketModal()">
+                        Create Ticket
+                    </button>
+
+                    <button onclick="getSystemInfo()">
+                        Diagnostics
+                    </button>
+
+                    <button onclick="logout()">
+                        Logout
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div id="chat-box"></div>
+
+            <div class="input-area">
+
+                <div class="input-container">
+
+
+                    <label for="screenshot" class="upload-btn">
+                        📎
+                    </label>
+
+                    <input type="file" id="screenshot">
+
+
+                    <textarea id="prompt" placeholder="Describe your issue..."></textarea>
+
+                </div>
+
+
+                <button class="send-btn" onclick="sendMessage()">
+                    Send
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div id="ticket-modal" class="ticket-modal">
+
+        <div class="ticket-content">
+
+            <h2>
+                Create Ticket
+            </h2>
+
+            <input type="text" id="ticket-title" placeholder="Issue title">
+
+            <textarea id="ticket-description" placeholder="Describe your issue"></textarea>
+
+            <select id="ticket-priority">
+
+                <option>
+                    Low
+                </option>
+
+                <option>
+                    Medium
+                </option>
+
+                <option>
+                    High
+                </option>
+
+            </select>
+
+            <button onclick="createTicket()">
+                Submit Ticket
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="/static/app.js"></script>
+
+</body>
+
+</html>
