@@ -157,8 +157,9 @@ def register(user: RegisterSchema):
     db.refresh(new_user)
 
     return {
-        "message": "User registered successfully"
-    }
+    "success": True,
+    "message": "User registered successfully"
+}
 
 
 
@@ -193,9 +194,10 @@ def login(user: LoginSchema):
     })
 
     return {
-        "message": "Login successful",
-        "access_token": token
-    }
+    "success": True,
+    "message": "Login successful",
+    "access_token": token
+}
 
 
 @app.get("/history")
@@ -295,7 +297,7 @@ def system_info():
         "ram_usage": psutil.virtual_memory().percent,
 
         "disk_usage": psutil.disk_usage(
-            'C:\\'
+            '/'
         ).percent
     }
 
