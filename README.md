@@ -1,6 +1,6 @@
-#  AI Desktop Support Assistant
+#  AI Desktop Support
 
-AI Desktop Support Assistant is a full-stack AI-powered IT helpdesk web application built using FastAPI, PostgreSQL, JavaScript, HTML, and CSS. The application helps users troubleshoot desktop and technical issues using AI-generated responses and includes real-world IT support features such as ticket management and system diagnostics.
+AI Desktop Support is a full-stack AI-powered IT helpdesk web application built using FastAPI, PostgreSQL, JavaScript, HTML, and CSS. The application helps users troubleshoot desktop and technical issues using AI-generated responses and includes real-world IT support features such as ticket management and system diagnostics.
 
 ---
 
